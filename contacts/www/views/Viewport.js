@@ -6,13 +6,13 @@ app.views.Viewport = Ext.extend(Ext.Panel, {
 		//put instances of cards into app.views namespace
 		Ext.apply(app.views, {
 			contactsList: new app.views.ContactsList(),
-			//contactDetail: new app.views.ContactDetail(),
+			contactDetail: new app.views.ContactDetail(),
 			//contactForm: new app.views.ContactForm()
 		});
 		Ext.apply(this, {
 			items: [
-				app.views.contactsList
-				//app.views.contactDetail,
+				app.views.contactsList,
+				app.views.contactDetail
 				//app.views.contactForm,
 			]
 		});

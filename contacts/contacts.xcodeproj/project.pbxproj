@@ -40,6 +40,8 @@
 		637C4BD314E5BE3000D5F8CA /* app.js in Sources */ = {isa = PBXBuildFile; fileRef = 637C4BD214E5BE3000D5F8CA /* app.js */; };
 		63FFEB8514E5D53000BFEAAB /* Contact.js in Sources */ = {isa = PBXBuildFile; fileRef = 63FFEB8414E5D52F00BFEAAB /* Contact.js */; };
 		63FFEB8714E6D4C600BFEAAB /* ContactsList.js in Sources */ = {isa = PBXBuildFile; fileRef = 63FFEB8614E6D4C600BFEAAB /* ContactsList.js */; };
+		63FFEB8914E7128900BFEAAB /* ContactDetail.js in Sources */ = {isa = PBXBuildFile; fileRef = 63FFEB8814E7128900BFEAAB /* ContactDetail.js */; };
+		63FFEB8D14E718E200BFEAAB /* contacts.js in Sources */ = {isa = PBXBuildFile; fileRef = 63FFEB8C14E718E200BFEAAB /* contacts.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,8 @@
 		637C4BD214E5BE3000D5F8CA /* app.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = app.js; path = www/app/app.js; sourceTree = "<group>"; };
 		63FFEB8414E5D52F00BFEAAB /* Contact.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = Contact.js; path = www/models/Contact.js; sourceTree = "<group>"; };
 		63FFEB8614E6D4C600BFEAAB /* ContactsList.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = ContactsList.js; path = www/views/ContactsList.js; sourceTree = "<group>"; };
+		63FFEB8814E7128900BFEAAB /* ContactDetail.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = ContactDetail.js; path = www/views/ContactDetail.js; sourceTree = "<group>"; };
+		63FFEB8C14E718E200BFEAAB /* contacts.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = contacts.js; path = www/controllers/contacts.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +123,9 @@
 		637C4B6714E5A91E00D5F8CA = {
 			isa = PBXGroup;
 			children = (
+				63FFEB8814E7128900BFEAAB /* ContactDetail.js */,
 				63FFEB8414E5D52F00BFEAAB /* Contact.js */,
+				63FFEB8C14E718E200BFEAAB /* contacts.js */,
 				63FFEB8614E6D4C600BFEAAB /* ContactsList.js */,
 				637C4BD214E5BE3000D5F8CA /* app.js */,
 				637C4BCE14E5B80A00D5F8CA /* Viewport.js */,
@@ -348,6 +354,8 @@
 				637C4BD314E5BE3000D5F8CA /* app.js in Sources */,
 				63FFEB8514E5D53000BFEAAB /* Contact.js in Sources */,
 				63FFEB8714E6D4C600BFEAAB /* ContactsList.js in Sources */,
+				63FFEB8914E7128900BFEAAB /* ContactDetail.js in Sources */,
+				63FFEB8D14E718E200BFEAAB /* contacts.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +451,7 @@
 				GCC_PREFIX_HEADER = "contacts/contacts-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
 				INFOPLIST_FILE = "contacts/contacts-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					UIKit,
@@ -470,6 +479,7 @@
 				GCC_PREFIX_HEADER = "contacts/contacts-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
 				INFOPLIST_FILE = "contacts/contacts-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					UIKit,
